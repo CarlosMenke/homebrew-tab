@@ -1,9 +1,9 @@
 class RefineVibeCode < Formula
   include Language::Python::Virtualenv
 
-  desc "CLI tool to refine your code vibes"
+  desc "A powerful CLI tool that analyzes your codebase for AI-generated code patterns, security vulnerabilities, and code quality issues. Perfect for developers who want to maintain professional code standards."
   homepage "https://github.com/CarlosMenke/refine-vibe-code"
-  url "https://files.pythonhosted.org/packages/source/r/refine-vibe-code/refine_vibe_code-0.1.0.tar.gz"
+  url "https://files.pythonhosted.org/packages/source/r/refine-vibe-code/refine_vibe_code-0.1.1.tar.gz"
   sha256 "45d43f36b6b80319b70a81d0e5ccb932f9c3c7dbfc4f5a2e6bdbb5953c2c403f"
 
   depends_on "python@3.12"
