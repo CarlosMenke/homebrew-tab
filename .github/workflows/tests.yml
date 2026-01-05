@@ -38,10 +38,11 @@ jobs:
       - run: brew test-bot --only-setup
 
       - run: brew test-bot --only-tap-syntax
-      - run: brew test-bot --only-formulae
+      - name: Build bottles
         if: github.event_name == 'pull_request'
-      - run: brew test-bot --only-formulae --root-url=https://ghcr.io/v2/${{ github.repository_owner }}/homebrew-tab
-        if: github.event_name == 'pull_request'
+        run: |
+          brew test-bot --only-formulae \
+          --root-url="https://ghcr.io/v2/${{ github.repository_owner }}/tab"
 
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
