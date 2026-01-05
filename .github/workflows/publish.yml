@@ -18,12 +18,15 @@ jobs:
       packages: write
     steps:
       - name: Wait for build tests
-        uses: Poseidon/wait-for-status-checks@v5
+        uses: Poseidon/wait-for-status-checks@v0.6.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # This should match the name of the job/workflow that builds your bottles
           # You can use a comma-separated list of job names if needed
           ignore_regexp: pr-pull
+          timeout_seconds: 3600
+          # Optional: poll more frequently
+          interval_seconds: 30
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
         with:
