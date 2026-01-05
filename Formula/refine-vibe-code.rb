@@ -6,8 +6,8 @@ class RefineVibeCode < Formula
   url "https://files.pythonhosted.org/packages/e3/0b/f3a829389b1ffbe40063911f98d9df1c9a3bc2fc5e9c9bc23f630e8bc1e2/refine_vibe_code-0.1.2.tar.gz"
   sha256 "c177eab63f120393350c99c3e4c09bc12b9cb178de0ce49b4ea792683c551773"
 
-  depends_on "libyaml"
   depends_on "rust" => :build
+  depends_on "libyaml"
   depends_on "python@3.12"
 
   # We include Typer manually since it is your main dependency
