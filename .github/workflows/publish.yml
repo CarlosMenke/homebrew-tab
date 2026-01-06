@@ -24,6 +24,7 @@ jobs:
           # This should match the name of the job/workflow that builds your bottles
           # You can use a comma-separated list of job names if needed
           ignore_regexp: pr-pull
+          match_regexp: '^(.*macros.*|.*test-bot.*)$'
           timeout_seconds: 3600
           # Optional: poll more frequently
           interval_seconds: 30
