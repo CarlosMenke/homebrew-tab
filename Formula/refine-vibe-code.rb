@@ -6,6 +6,13 @@ class RefineVibeCode < Formula
   url "https://files.pythonhosted.org/packages/e3/0b/f3a829389b1ffbe40063911f98d9df1c9a3bc2fc5e9c9bc23f630e8bc1e2/refine_vibe_code-0.1.2.tar.gz"
   sha256 "c177eab63f120393350c99c3e4c09bc12b9cb178de0ce49b4ea792683c551773"
 
+  bottle do
+    root_url "https://ghcr.io/v2/carlosmenke/tab"
+    rebuild 1
+    sha256 cellar: :any,                 arm64_tahoe:  "406fa5ef722acf93d2abffd62d1d575986a809e3ae0e60b76febf8345357568f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6e44a50147f810919d1d06c7e0401272311681a8fdc4bea2d0a005882199c992"
+  end
+
   depends_on "rust" => :build
   depends_on "libyaml"
   depends_on "python@3.12"
