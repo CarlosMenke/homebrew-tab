@@ -3,7 +3,7 @@ class RefineVibeCode < Formula
 
   desc "CLI tool to refine your code vibes"
   homepage "https://github.com/CarlosMenke/refine-vibe-code"
-  url "https://files.pythonhosted.org/packages/e3/0b/f3a829389b1ffbe40063911f98d9df1c9a3bc2fc5e9c9bc23f630e8bc1e2/refine_vibe_code-0.1.3.tar.gz"
+  url "https://files.pythonhosted.org/packages/00/b6/fa2cd8fbd77aaa8ac1118260c5c4587b3af9d587a2ce466ac34c0b39b7bb/refine_vibe_code-0.1.3.tar.gz"
   sha256 "d34dd45a77725d53d5e8753e68af4ef9fc5a42ab9dead5918c7549babe072200"
 
   depends_on "rust" => :build
